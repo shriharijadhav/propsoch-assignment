@@ -102,6 +102,12 @@ const PropertyDetail = () => {
       </div>
       </div>
 
+      <div className='propertyDetails_ammentiesDiv_subDiv addOnClass'>
+            <div className='singleItem'>2 Hospital</div>
+            <div className='singleItem'>4 Gas stations</div>
+            <div className='singleItem'>2 Schools</div>
+        </div>
+
       <div className='propertyDetails_ammentiesDiv'>
         <span className='propertyDetails_ammentiesDiv_heading'>Property Ammenties</span>
         <div className='propertyDetails_ammentiesDiv_subDiv'>

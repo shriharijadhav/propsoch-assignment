@@ -6,7 +6,7 @@
     row-gap: 26px !important;
     gap: 13px; /* This sets both row and column gap */
     padding: 13px 13px;
-    height: 100%;
+    height: 90vh;
     overflow-y: auto;
     }
 

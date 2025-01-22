@@ -20,7 +20,7 @@ const PropertyList = () => {
       listElement.scrollTop + listElement.clientHeight >= listElement.scrollHeight - 5 &&
       !loading
     ) {
-      console.log("Bottom reached, loading more properties...");
+    //   console.log("Bottom reached, loading more properties...");
       dispatch(setLoading(true));
       setTimeout(() => {
         const newProperties = generateDummyData(properties.length + 1, 10);
