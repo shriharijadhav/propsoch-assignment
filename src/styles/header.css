@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    height: 54px;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+.headerTitle{
+    font-weight: 700;
+    color: #E57601;
+}
+
+.headerIcons{
+    display: flex;
+    gap: 8px;
+
+}

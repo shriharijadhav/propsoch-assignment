@@ -1,0 +1,65 @@
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default (mobile) */
+    gap: 0; /* No space between items (both rows and columns) */
+    column-gap: 13px !important;
+    row-gap: 26px !important;
+    gap: 13px; /* This sets both row and column gap */
+    padding: 13px 13px;
+    height: 100%;
+    overflow-y: auto;
+    }
+
+   .property-list::-webkit-scrollbar {
+    width: 0px; /* Hide the scrollbar by setting its width to 0 */
+    background: transparent; /* Optional: Set transparent background */
+  }
+  
+  
+  @media (min-width: 768px) {
+    .property-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+    }
+  }
+  
+  .property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 307px;
+   }
+  
+   .property-link{
+    text-decoration: none;
+   }
+
+   .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+  .loader p{
+    font-size: 12px;
+  }
+  
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #E57601;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1.2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

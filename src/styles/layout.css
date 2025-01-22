@@ -1,0 +1,59 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
+  height: 100dvh; /* Dynamic viewport height */
+   /* overflow-x: hidden; */
+  overflow-y: auto;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+   padding-bottom: 100px;
+}
+
+.content {
+  overflow-y: scroll; /* Ensure vertical scroll is enabled */
+}
+
+.content::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar by setting its width to 0 */
+  background: transparent; /* Optional: Set transparent background */
+}
+
+@media (max-width: 1024px) {
+  .content {
+    display: block;
+  }
+
+  .desktop-message {
+    display: block;
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 1025px) {
+  .content {
+    display: none;
+  }
+
+  .desktop-message {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #FF750426;
+    color: #FF7504;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 8px;
+  }
+}

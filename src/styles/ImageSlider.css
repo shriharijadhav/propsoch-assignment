@@ -1,0 +1,54 @@
+/* Swiper container styles */
+.swiper {
+    width: 100%;
+    height:100%; /* Set the height of the swiper */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden;
+  }
+  
+  /* Style for individual swiper slides */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the slide takes full height */
+  }
+  
+  /* Custom styles for images inside the slides */
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the whole slide */
+    border-radius: 10px; /* Optional: Add rounded corners to the images */
+  }
+  
+  /* Style for pagination (dots) */
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7); /* Light white color */
+    transition: background-color 0.3s;
+  }
+  
+  /* Style for active pagination dot */
+  .swiper-pagination-bullet-active {
+    background-color: #007aff; /* Active dot color */
+  }
+  
+  /* Add a shadow to the slider */
+  .swiper {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Optional: Add a fade-in animation when the slider loads */
+  .swiper {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
