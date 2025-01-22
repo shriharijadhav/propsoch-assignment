@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleWishlist } from '../features/propertySlice';
-import '../styles/PropertyCard.css'; // Create corresponding CSS file
+import '../styles/propertyCard.css'; // Create corresponding CSS file
 import ImageSlider from './ImageSlider';
 
 import imageOne from '../assets/images/sliderImage_1.jpeg';

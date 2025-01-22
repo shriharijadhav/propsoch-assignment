@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import PropertyCard from './PropertyCard';
-import '../styles/PropertyList.css';
+import '../styles/propertyList.css';
 import { appendProperties, setLoading } from '../features/propertySlice';
 import Notification from './Notification';
 

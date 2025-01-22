@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import '../styles/PropertyDetail.css'; // Create corresponding CSS file
+import '../styles/propertyDetail.css'; // Create corresponding CSS file
 import {
   MdArrowBackIos,
   MdLocationOn,
